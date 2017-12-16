@@ -1,8 +1,8 @@
 package com.cs527project.holstest.htmlelements.utils.enumerations;
 
 public enum AccountInfo {
-    EMAIL("yiyuli2@illinois.edu"),
-    PASSWORD("19940607Ab");
+    EMAIL(""),      //email here
+    PASSWORD("");   //password here
 
     private String value;
 
