@@ -11,7 +11,7 @@ Default webDriver is Mac version, if run on other systems, use corresponding ver
 ```
 $ src/resources/drivers/YourDriverFileName
 ```
-And reset the driver path at following file by replacing "chromeDriver" of chromeDriverPath variable  with your driverFileName
+And reset the driver path at following file by replacing "chromeDriver" of chromeDriverPath variable at line 20 with your driverFileName
 ```
 $ src/main/java/com/cs527project/holstest/htmlelements/utils/Driver/BrowserDriver.java
 ```
