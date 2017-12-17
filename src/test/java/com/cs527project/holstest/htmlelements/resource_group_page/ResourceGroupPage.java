@@ -7,6 +7,8 @@ import com.cs527project.holstest.htmlelements.loader.HtmlElementLoader;
 import com.cs527project.holstest.htmlelements.page.Page;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.JavascriptExecutor;
+import com.cs527project.holstest.htmlelements.utils.Utils;
 
 import java.util.List;
 
@@ -35,6 +37,10 @@ public class ResourceGroupPage extends Page{
     @FindBy(xpath = "//span[@class=\"fxs-button-text\"][@data-bind=\"text: data.text\"][contains(text(), 'Delete')]")
     private List<HtmlElement> confirmBtn;
 
+    @Name("NOTIFICATION_CLOSE")
+    @FindBy(xpath = "//button[@class=\"fxs-contextpane-close\"][@title=\"Close\"]")
+    private List<HtmlElement> notificationClose;
+
     private final String pageError = "Resource group page is not displayed";
     private final String expectedTitle = "Resource groups - Microsoft Azure";
 
@@ -48,40 +54,35 @@ public class ResourceGroupPage extends Page{
     }
 
     public void deleteAzureStorageResourceGroup() {
-        waitForAMoment();
+        notificationClose.get(0).click();
+        Utils.waitForAMoment(3000);
         context.click();
         deleteBtn.click();
-        waitForAMoment();
+        Utils.waitForAMoment(3000);
         storageConfirmText.sendKeys("johnleeresources");
-        waitForAMoment();
+        Utils.waitForAMoment(3000);
         confirmBtn.get(0).click();
     }
 
     public void deleteAzureContainerResourceGroup() {
-        waitForAMoment();
+        notificationClose.get(0).click();
+        Utils.waitForAMoment(3000);
         context.click();
-        waitForAMoment();
+        Utils.waitForAMoment(3000);
         deleteBtn.click();
         containerConfirmText.sendKeys("ACSLabResourceGroup");
-        waitForAMoment();
+        Utils.waitForAMoment(3000);
         confirmBtn.get(0).click();
     }
 
     public void deleteAzureWebAppResourceGroup() {
-        waitForAMoment();
+        Utils.waitForAMoment(3000);
         context.click();
-        waitForAMoment();
+        Utils.waitForAMoment(3000);
         deleteBtn.click();
         appConfirmText.sendKeys("WebAppsLabResourceGroup");
-        waitForAMoment();
+        Utils.waitForAMoment(3000);
         confirmBtn.get(0).click();
     }
 
-    private void waitForAMoment() {
-        try {
-            Thread.sleep(5000);
-        } catch (InterruptedException ex) {
-            Thread.currentThread().interrupt();
-        }
-    }
 }

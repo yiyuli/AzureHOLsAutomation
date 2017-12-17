@@ -1,4 +1,4 @@
-package com.cs527project.holstest.htmlelements.AzureStorageAndCognitiveServices;
+package com.cs527project.holstest.htmlelements.azure_storage;
 
 import com.cs527project.holstest.htmlelements.annotations.Name;
 import com.cs527project.holstest.htmlelements.element.HtmlElement;
@@ -41,7 +41,7 @@ public class CreateAccountDetailPage extends Page{
     }
 
     public ResultPage goToResultPage() {
-        createBtn.get(10).click();
+        createBtn.get(11).click();
         ResultPage resultPage = new ResultPage(getDriver());
         return resultPage;
     }

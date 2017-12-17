@@ -1,7 +1,6 @@
 package com.cs527project.holstest.htmlelements.search_page;
 
 import com.cs527project.holstest.htmlelements.annotations.Name;
-import com.cs527project.holstest.htmlelements.azure_web_apps.ResultPage;
 import com.cs527project.holstest.htmlelements.azure_web_apps.WebAppSqlPage;
 import com.cs527project.holstest.htmlelements.docker_containers_in_the_azure_container_service.BasicConfigPage;
 import com.cs527project.holstest.htmlelements.element.HtmlElement;
@@ -9,7 +8,7 @@ import com.cs527project.holstest.htmlelements.exceptions.HtmlElementsException;
 import com.cs527project.holstest.htmlelements.loader.HtmlElementLoader;
 import com.cs527project.holstest.htmlelements.page.Page;
 import com.cs527project.holstest.htmlelements.utils.Driver.BrowserDriver;
-import com.cs527project.holstest.htmlelements.AzureStorageAndCognitiveServices.CreateAccountPage;
+import com.cs527project.holstest.htmlelements.azure_storage.CreateAccountPage;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;

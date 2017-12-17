@@ -1,4 +1,4 @@
-package com.cs527project.holstest.htmlelements.AzureStorageAndCognitiveServices;
+package com.cs527project.holstest.htmlelements.azure_storage;
 
 import com.cs527project.holstest.htmlelements.annotations.Name;
 import com.cs527project.holstest.htmlelements.element.HtmlElement;

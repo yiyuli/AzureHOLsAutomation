@@ -5,6 +5,7 @@ import com.cs527project.holstest.htmlelements.element.HtmlElement;
 import com.cs527project.holstest.htmlelements.exceptions.HtmlElementsException;
 import com.cs527project.holstest.htmlelements.loader.HtmlElementLoader;
 import com.cs527project.holstest.htmlelements.page.Page;
+import com.cs527project.holstest.htmlelements.utils.Utils;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.FindBy;
 
@@ -40,11 +41,7 @@ public class BasicConfigPage extends Page {
     }
 
     public MasterConfigPage goToMasterConfigPage() {
-        try {
-            Thread.sleep(5000);
-        } catch (InterruptedException ex) {
-            Thread.currentThread().interrupt();
-        }
+
 
 //        WebDriverWait wait = new WebDriverWait(getDriver(),10);
 //        wait.until(new ExpectedCondition<Boolean>() {
@@ -56,7 +53,7 @@ public class BasicConfigPage extends Page {
 //                    return false;
 //            }
 //        });
-
+        Utils.waitForAMoment(3000);
         okBtn.click();
         MasterConfigPage masterConfigPage = new MasterConfigPage(getDriver());
         return masterConfigPage;

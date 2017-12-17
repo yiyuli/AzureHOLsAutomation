@@ -6,6 +6,7 @@ import com.cs527project.holstest.htmlelements.exceptions.HtmlElementsException;
 import com.cs527project.holstest.htmlelements.loader.HtmlElementLoader;
 import com.cs527project.holstest.htmlelements.page.Page;
 import com.cs527project.holstest.htmlelements.utils.Driver.BrowserDriver;
+import com.cs527project.holstest.htmlelements.utils.Utils;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.FindBy;
 
@@ -58,7 +59,7 @@ public class WebAppSqlPage extends Page {
 
     public ResultPage goToResultPage() {
         ((BrowserDriver) getDriver()).waitUntilVisible(notes);
-        createBtn.get(9).click();
+        createBtn.get(createBtn.size() - 1).click();
         ResultPage resultPage = new ResultPage(getDriver());
         return resultPage;
     }

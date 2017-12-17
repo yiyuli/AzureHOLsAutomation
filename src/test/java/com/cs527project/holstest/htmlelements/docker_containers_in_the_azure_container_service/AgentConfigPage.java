@@ -5,6 +5,7 @@ import com.cs527project.holstest.htmlelements.element.HtmlElement;
 import com.cs527project.holstest.htmlelements.exceptions.HtmlElementsException;
 import com.cs527project.holstest.htmlelements.loader.HtmlElementLoader;
 import com.cs527project.holstest.htmlelements.page.Page;
+import com.cs527project.holstest.htmlelements.utils.Utils;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.FindBy;
 
@@ -27,11 +28,7 @@ public class AgentConfigPage extends Page {
 
 
     public SummaryPage goToSummaryPage() {
-        try {
-            Thread.sleep(5000);
-        } catch (InterruptedException ex) {
-            Thread.currentThread().interrupt();
-        }
+        Utils.waitForAMoment(3000);
         okBtn.click();
         SummaryPage summaryPage = new SummaryPage(getDriver());
         return summaryPage;

@@ -1,14 +1,11 @@
-package com.cs527project.holstest.htmlelements.AzureStorageAndCognitiveServices;
+package com.cs527project.holstest.htmlelements.azure_storage;
 
 import com.cs527project.holstest.htmlelements.annotations.Name;
-import com.cs527project.holstest.htmlelements.docker_containers_in_the_azure_container_service.ResultPage;
 import com.cs527project.holstest.htmlelements.element.HtmlElement;
 import com.cs527project.holstest.htmlelements.exceptions.HtmlElementsException;
 import com.cs527project.holstest.htmlelements.loader.HtmlElementLoader;
 import com.cs527project.holstest.htmlelements.page.Page;
-import com.cs527project.holstest.htmlelements.utils.Driver.BrowserDriver;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
 public class CreateAccountPage extends Page{
