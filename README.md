@@ -1,6 +1,6 @@
 # AzureHOLsAutomation
 Automation steps for Azure Hands-on-labs using Selenium WebDriver
-The code is run based on Mac version chrome driver. Running on other systems need corresponding version driver put at src/resources/drivers/, with path specified at src/main/java/com/cs527project/holstest/htmlelements/utils/Driver/BrowserDriver.java chromeDriverPath
+The code is run based on Mac version chrome driver. Running on other system could be possible but have not been tried.
 
 ## Get Started
 Put your account email and password at  
