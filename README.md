@@ -19,7 +19,8 @@ Make sure resources are all deleted before running. If one automation step is ru
 <br />
 Running all steps is not supported and expected to fail. Because the automation steps will trigger deleting resource but will not wait until deletion finished which may cause remaining resources.
 <br />
-Command for running each individual automation step 
+<br />
+Commands for running each individual automation steps 
 ```
 $ mvn test -Dtest=TestGettingStartedWithAzure
 $ mvn test -Dtest=TestAzureWebApps
